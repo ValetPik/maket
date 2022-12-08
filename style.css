@@ -24,35 +24,16 @@ header {
     align-items: center;
 }
 
-.header__logo-image{
-    width: 108px;
- 
-}
-
-.header__logo{
-    transition: all .3s;
-}
-
-.header__logo:hover{
-    transform: scale(1.5)
-    
-}
-
 /* main */
 /* banner */
 .banner {
     padding: 100px 0 200px 0px;
 }
 
-.banner__image{
-    width: 1620px;
-    height: 750px;
-}
-
 .banner__block {
     width: 100%;
     height: 750px;
-    background: #BDBDBD;
+    background: black;
 }
 
 /* content */
@@ -60,14 +41,9 @@ header {
     margin-bottom: 200px;
 }
 
-.content__image{
-    width: 964px;
-    height: 300px;
-}
-
 .content__img {
     width: 100%;
-   
+    height: 300px;
 }
 
 .content__top {
@@ -84,7 +60,10 @@ header {
     font-size: 48px;
     line-height: 56px;
 }
-
+.content__button:hover {
+    background: rgb(151, 95, 241);
+    transition: all, .3s;
+}
 .content__button {
     font-family: 'Roboto';
     font-style: normal;
@@ -96,14 +75,7 @@ header {
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
-    transition: all .3s;
-   
 }
-
-.content__button:hover{
-    background: blue;
-    color: aqua;
-}   
 
 .content__top-right {
     display: flex;
@@ -117,6 +89,9 @@ header {
     align-items: flex-end;
     gap: 30px;
     margin-bottom: 50px;
+}
+.content__button-mobile{
+    display: none;
 }
 
 /* about-us */
@@ -141,11 +116,9 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    
 }
 .about-us-image {
     width: 19%;
-    margin-bottom: 100px;
 }
 
 
@@ -199,4 +172,463 @@ footer{
 
 .tg:hover{
     transform: scale(1.5);
+}
+
+.contacts{
+    text-decoration: none;
+}
+
+.header__logo-image:hover{
+    transform: scale(1.25);
+    transition: all, .3s;
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    main{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .images__footer{
+        margin-left: 355px;
+        
+    }
+
+    .banner__image{
+        width: 700px;
+        height: 750px;
+    }
+
+    .contacts__info{
+        vertical-align: 25px;
+    }
+
+    
+}
+@media (max-width: 1199px){
+    .banner__image{
+        width: 899px;
+        height: 750px;
+    }
+    .images__footer{
+        margin-left: 555px;
+        margin-top: -50px;
+        display: flex;
+        padding-left: 70px;
+    }
+    .content__button{
+        line-height: 20px;
+        font-size: 20px;
+    }
+    .content__top-right-title{
+        font-size: 36px;
+        line-height: 30px;
+    }
+    .about-us__title{
+        font-size: 50px;
+    }
+    .content {
+        margin-bottom: 100px;
+    }
+    .banner {
+        padding:100px 0 100px 0px;
+    }
+    .about-us-info{
+        margin-bottom: 100px;
+    }
+
+    .contacts__info{
+        margin-left: 30px;
+        vertical-align: 22px;
+    }
+
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (max-width: 992px){
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .banner__image{
+        width: 592px;
+        height: 750px;
+    }
+
+    .images__footer{
+        margin-left: 555px;
+        margin-top: -50px;
+        display: flex;
+        padding-left: 70px;
+    }
+    .content__button{
+        line-height: 20px;
+        font-size: 20px;
+    }
+    .content__top-right-title{
+        font-size: 36px;
+        line-height: 30px;
+    }
+    .about-us__title{
+        font-size: 50px;
+    }
+    .content {
+        margin-bottom: 100px;
+    }
+    .banner {
+        padding:100px 0 100px 0px;
+    }
+    .about-us-info{
+        margin-bottom: 100px;
+    }
+
+    .contacts__info{
+        margin-left: 30px;
+        vertical-align: 22px;
+    }
+}
+
+@media(max-width: 991px){
+    .banner__image{
+        width: 591px;
+        height: 750px;
+    }
+    
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0;
+    }
+    
+    .banner__image{
+        width: 568px;
+        height: 750px;
+    }
+    
+
+    .images__footer{
+        padding-left: 0px;
+        margin-top: -50px;
+        display: flex;
+    }
+    .contacts__info{
+        margin-left: 30px;
+        vertical-align: 22px;
+    }
+    .container {
+        width: calc(100% - 50px - 50px);
+        
+    }
+    .content__button{
+        line-height: 20px;
+        font-size: 20px;
+    }
+    .banner {
+        padding:50px 0 50px 0px;
+    }
+    .content {
+        margin-bottom: 0;
+    }
+    .content__middle{
+        flex-direction: column;
+        margin-bottom: 0;
+        gap: 0;
+    }
+    .content__button{
+        display: none;
+    }
+    .content__button-mobile {
+        display: inline-block;
+        margin: 0 auto;
+        position: relative;
+        bottom:200px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 75px;
+        color: #F2F2F2;
+        background: rgba(0,0,0, 0.5);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .content__top-right{
+        padding-top: 250px;
+        
+    }
+
+    .content__top-right-title{
+        margin-top: -200px;
+    }
+    .about-us-info{
+        margin-bottom: 50px;
+    }
+
+    
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    header {
+        padding: 30px 0;
+    }
+
+    .banner__image{
+        width: 567px;
+        height: 750px;
+    }
+    .content__top-right-title{
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+    .header__logo-image{
+        width: 60%;
+    }
+    .container {
+        width: calc(100% - 50px - 50px);
+        
+    }
+    .content__top{
+        flex-direction: column;
+    }
+    .content__button{
+        line-height: 20px;
+        font-size: 20px;
+    }
+    .banner {
+        padding:50px 0 50px 0px;
+    }
+    .content {
+        margin-bottom: 0;
+    }
+    .content__middle{
+        flex-direction: column;
+        margin-bottom: 0;
+        gap: 0;
+    }
+    .content__button{
+        display: none;
+    }
+    .content__button-mobile {
+        display: inline-block;
+        margin: 0 auto;
+        position: relative;
+        bottom:200px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 75px;
+        color: #F2F2F2;
+        background: rgba(0,0,0, 0.5);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+    }
+    .about-us-info{
+        margin-bottom: 50px;
+    }
+    .about-us__title{
+        font-size: 50px;
+    }
+
+    .contacts__info{
+        margin-left: 50px;
+        vertical-align: 22px;
+    }
+
+    .content__top-right{
+        
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    header {
+        padding: 30px 0;
+        
+    }
+
+    .banner__image{
+        width: 280px;
+        height: 750px;
+    }
+
+    .images__footer{
+        display: flex;
+        margin-left: 75px;
+        padding-top: 50px;
+    }
+
+    .content__top-right-title{
+        margin-top: -100px;
+        margin-bottom: 70px;
+    }
+    .header__logo-image{
+        width: 60%;
+    }
+    .container {
+        width: calc(100% - 50px - 50px);
+        
+    }
+    .content__top{
+        flex-direction: column;
+    }
+    .content__button{
+        line-height: 20px;
+        font-size: 20px;
+    }
+    .banner {
+        padding:50px 0 50px 0px;
+    }
+    .content {
+        margin-bottom: 0;
+    }
+    .content__middle{
+        flex-direction: column;
+        margin-bottom: 0;
+        gap: 0;
+    }
+    .content__button{
+        display: none;
+        
+    }
+    .content__button-mobile {
+        display: inline-block;
+        margin: 0 auto;
+        position: relative;
+        bottom:200px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 75px;
+        color: #F2F2F2;
+        background: rgba(0,0,0, 0.5);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        
+    }
+    .about-us-info{
+        margin-bottom: 50px;
+    }
+    .about-us__title{
+        font-size: 50px;
+    }
+
+    .contacts__info{
+        margin-left: 77px;
+    }
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+    header {
+        padding: 30px 0;
+    }
+
+    .banner__image{
+        width: 120px;
+        height: 750px;
+        
+    }
+
+    .images__footer{
+        display: flex;
+        margin-left: 10px;
+    }
+    .header__logo-image{
+        width: 60%;
+    }
+    .container {
+        width: calc(100% - 50px - 50px);
+        
+    }
+    .content__top{
+        flex-direction: column;
+    }
+    .content__button{
+        line-height: 20px;
+        font-size: 20px;
+    }
+    .banner {
+        padding:50px 0 50px 0px;
+    }
+    .content {
+        margin-bottom: 0;
+    }
+    .content__middle{
+        flex-direction: column;
+        margin-bottom: 0;
+        
+        gap: 0;
+    }
+    .content__button{
+        display: none;
+    }
+    .content__button-mobile {
+        display: inline-block;
+        margin: 0 auto;
+        position: relative;
+        bottom:200px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+        color: #F2F2F2;
+        background: rgba(0,0,0, 0.5);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        
+    }
+    .content__top-right-title{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .about-us-info{
+        margin-bottom: 50px;
+    }
+    .about-us__title{
+        font-size: 50px;
+    }
+
+    footer{
+        padding: 30px 0;
+       
+    }
+
+    .footer__info{
+        margin-left: 0px;
+    }
+
+    .contacts__info{
+        margin-left: 9px;
+    }
+
+    .content__img{
+        width: 120px;
+        
+    }
+
+    .content__button-mobile{
+        width: 100px;
+        font-size: 15px;
+    }
+    .content__top-right-title{
+        margin-top: -200px;
+    }
+
+    .content__top-right{
+        margin-top: -50px;
+    }
 }
