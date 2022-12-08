@@ -103,7 +103,7 @@ header {
 .content__button:hover{
     background: blue;
     color: aqua;
-}
+}   
 
 .content__top-right {
     display: flex;
